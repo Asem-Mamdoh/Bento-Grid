@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "DM Sans", sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.all {
+  border-radius: 8px;
+  text-align: left;
+  padding: 20px;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, auto);
+  gap: 20px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.sec1 {
+  background-color: #7650dc;
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 8px;
+  grid-area: 1 / 2 / 3 / 4;
+}
+
+.sec1 .imge {
+  width: 80%;
+}
+.sec1 .imge img{
+  width: 100px;
+}
+
+.title {
+  font-weight: 500;
+  color: #fff;
+}
+
+.title span {
+  color: #ffcb6b;
+}
+
+.imge {
+  width: 100%;
+  margin: 20px auto 5px;
+  overflow: hidden;
+}
+
+.imge img {
+  width: 100%;
+}
+
+.sec1 p {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.sec2 {
+  background-color: #f9eee1;
+  /* max-width: 320px; */
+  padding: 50px 20px;
+  grid-area: 1 / 1 / 4 / 2;
+  
+}
+
+.sec2 .imge {
+  width: 100%;
+}
+
+
+
+.title2 {
+  color: #121212;
+  font-weight: 500;
+  line-height: 25px;
+  font-size: 29px;
+  padding-bottom: 10px;
+}
+
+.title2 span {
+  color: #7650dc;
+  font-style: italic;
+}
+
+.sec3 {
+  background-color: #dacffc;
+  /* max-width: 320px; */
+  grid-area: 1 / 4 / 5 / 5;
+}
+
+.sec4 {
+  background-color: #ffcb6b;
+  grid-area: 4 / 1 / 7 / 2;
+}
+
+
+.sec5 {
+  background-color: #fff;
+  grid-area: 3 / 2 / 5 / 3;
+}
+
+.sec5 .title2 {
+  color: #121212;
+}
+
+.sec6 {
+  background-color: #ffcb6b;
+  grid-area: 3 / 3 / 5 / 4;
+}
+
+.sec6 .imge img{
+  width: 250px;
+}
+
+.sec7 {
+  background-color: #fff;
+  grid-area: 5 / 2 / 7 / 3;
+}
+
+.sec8 {
+  background-color: #7650dc;
+  grid-area: 5 / 3 / 7 / 5;
+}
+
+.sec8 .imge img{
+  width: 200px;
+}
+
+
+
+
+
+@media (max-width: 450px) {
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .sec1 {
+    max-width: 450px;
+    height: 100%;
+    order: 1;
+  }
+  .sec2 {
+    max-width: 450px;
+    height: 100%;
+    order: 7;
+  }
+  .sec3 {
+    max-width: 450px;
+    height: 100%;
+    order: 4;
+  }
+  .sec4 {
+    max-width: 450px;
+    height: 100%;
+    order: 8;
+  }
+  .sec5 {
+    max-width: 450px;
+    height: 100%;
+    order: 2;
+  }
+  .sec6 {
+    max-width: 450px;
+    height: 100%;
+    order: 3;
+  }
+  .sec7 {
+    max-width: 450px;
+    height: 100%;
+    order: 6;
+  }
+  .sec8 {
+    max-width: 450px;
+    height: 100%;
+    order: 5;
+  }
+
+}
